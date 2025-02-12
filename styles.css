@@ -1,5 +1,6 @@
 h1{
     text-align: center;
+    background-color: transparent;
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
@@ -14,36 +15,6 @@ header{
     color: grey;
     font-family:'Papyrus',cursive;
 
-}
-.plant-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px;
-    
-}
-
-.plant-card {
-    cursor: pointer;
-    background-color: rgb(0, 0, 0);
-    border: 1px solid #37b214;
-    border-radius: 10px;
-    padding: 5px;
-    margin: 15px;
-    width: 200px;
-    text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-}
-
-.plant-card:hover {
-    transform: scale(1.02);
-}
-
-.plant-card img {
-    width: 150px;
-    height: 150px;
-    border-radius: 1px;
 }
 .navbar{
     display: flex;
@@ -79,4 +50,28 @@ header{
 .navbar li{
     float: left;
 }
+body{
+    background-image: url("home bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+       justify-content: center;
+    align-items: center;
 
+}
+.centre-text{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transform: translate(-50%,-50%);
+}
+.centre-text:hover{
+    color: #aeba5f;
+    transition: background_color 1s ease;
+}
