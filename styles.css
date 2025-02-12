@@ -16,6 +16,37 @@ header{
     font-family:'Papyrus',cursive;
 
 }
+
+.search_bar {
+    width: 16%;
+    position: relative;
+    padding: 14px 10px;
+    margin: 1% 42%;
+    font-size: 35px;
+    text-align: center;
+    font-family:"Jim Nightshade";
+    background: rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
+    border-width: 0px 0px 4px 0px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    outline:none;
+    transition: 0.3s ease;
+}
+
+.search_bar:hover {
+    width: 20%;
+    margin: 1% 40%;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.3);
+}
+.search_bar:focus {
+    width: 20%;
+    margin: 1% 40%;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
 .navbar{
     display: flex;
     justify-content: center;
