@@ -82,50 +82,39 @@ body{
     transition: background_color 1s ease;
 }
 
-.search-bar {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px; /* Space between the button and input */
-    margin: 20px;
-    width: 400px; /* Adjust width as needed */
-    margin-left: 690px;
-    margin-top: 10px;
-    background: transparent;
-    
-    
-    
-    
-  }
+
   
-  .search-bar button {
-    
-    align-items: center;
-    justify-content: center;
-    
-    border: 1px solid #000; /* Black border for the button */
-    background-color:darkolivegreen; /* Light gray background */
-    border-radius: 5px; /* Subtle rounding for the button */
-    cursor: pointer;
-    
-  }
-  
-  
-  
-  .search-bar input {
-    width: 100px;
-    border: none;
-    font-size: 16px; /* Match the font size in your example */
-    font-family: "Georgia", serif; /* Elegant font family */
-    color:black;
-    outline: 2px;
-     /* Transparent input background */
-  }
-  
-  hr {
-    border: black;
-    border-top: 2px solid #000; /* Black line below the search bar */
-    width: 160px;
-    margin: -10px auto;
-  }
-  
+  .search-bar {
+    width: 16%;
+    position: relative;
+    padding: 14px 10px;
+    margin: 1% 42%;
+    font-size: 35px;
+    text-align: center;
+    font-family:"Jim Nightshade";
+    background: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    border-width: 0px 0px 4px 0px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    outline:none;
+    transition: 0.3s ease;
+}
+.search-bar::placeholder {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 40px; 
+    font-family: "Jim Nightshade";
+}
+
+.search-bar:hover {
+    width: 20%;
+    margin: 1% 40%;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.4);
+}
+.search-bar:focus {
+    width: 20%;
+    margin: 1% 40%;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.4);
+}
