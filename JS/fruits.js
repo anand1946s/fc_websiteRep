@@ -102,5 +102,23 @@ function moveToFinalCart() {
     updateCart();
     updateFinalCart();
 }
+function goToCart() {
+window.location.href = "../categories/cart.html";
+}
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+function addToCart(index) {
+    let existingItem = cart.find(item => item.name === plants[index].name);
+    
+    if (existingItem) {
+        existingItem.quantity += 1; 
+        alert(`${existingItem.name} added to cart! \nQuantity : ${existingItem.quantity}\nQuantity can be changed in the cart menu`); 
+    } else {
+        let newItem = { ...plants[index], quantity: 1 }
+        cart.push(newItem);
+        alert(`${newItem.name} added to cart! \nQuantity : ${newItem.quantity}\nQuantity can be changed in the cart menu`);
+    }
 
+    localStorage.setItem("cart", JSON.stringify(cart));
+    
+}
 document.getElementById("add-to-list-button").addEventListener("click", moveToFinalCart);
