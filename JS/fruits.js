@@ -122,3 +122,74 @@ function addToCart(index) {
     
 }
 document.getElementById("add-to-list-button").addEventListener("click", moveToFinalCart);
+
+/*const finalCart = {};
+let cart = JSON.parse(localStorage.getItem("cart")) || {}; // Change cart to an object
+
+function displayPlants(filteredPlants = plants) {
+    const gallery = document.getElementById("plant-gallery");
+    gallery.innerHTML = "";
+
+    filteredPlants.forEach((plant) => {
+        const plantCard = document.createElement("div");
+        plantCard.classList.add("plant-card");
+        plantCard.innerHTML = `
+            <img src="${plant.image}" alt="${plant.name}">
+            <h3>${plant.name}</h3>
+            <p>Price: $<span class="price">${plant.price}</span></p>
+            <button class="add-to-cart" data-name="${plant.name}" data-price="${plant.price}">Add to Cart</button>
+        `;
+        gallery.appendChild(plantCard);
+    });
+
+    document.querySelectorAll(".add-to-cart").forEach(button => {
+        button.addEventListener("click", function () {
+            const plantName = this.getAttribute("data-name");
+            const plantPrice = parseInt(this.getAttribute("data-price"));
+
+            if (!cart[plantName]) {
+                cart[plantName] = { quantity: 0, price: plantPrice };
+            }
+            cart[plantName].quantity++;
+
+            localStorage.setItem("cart", JSON.stringify(cart)); // Save cart to localStorage
+            updateCart();
+        });
+    });
+}
+
+function updateCart() {
+    let totalCost = 0;
+    let cartContent = "";
+
+    for (const [name, item] of Object.entries(cart)) {
+        if (item.quantity && item.price) { // Ensure values are defined
+            totalCost += item.quantity * item.price;
+            cartContent += `<p>${name} x${item.quantity} - $${item.quantity * item.price}</p>`;
+        }
+    }
+
+    document.getElementById("cart-items").innerHTML = cartContent || "Cart is empty";
+    document.getElementById("total-price").textContent = `Total: $${totalCost}`;
+}
+
+function moveToFinalCart() {
+    for (const [name, item] of Object.entries(cart)) {
+        if (!finalCart[name]) {
+            finalCart[name] = { quantity: 0, price: item.price };
+        }
+        finalCart[name].quantity += item.quantity;
+    }
+
+    Object.keys(cart).forEach(key => delete cart[key]); // Clear cart
+    localStorage.setItem("cart", JSON.stringify(cart)); // Save cleared cart
+    updateCart();
+    updateFinalCart();
+}
+
+document.getElementById("add-to-list-button").addEventListener("click", moveToFinalCart);
+
+// Initialize cart display on page load
+updateCart();
+displayPlants();
+*/
