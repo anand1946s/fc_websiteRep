@@ -5,14 +5,8 @@ h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
 }
-html, body {
-    overflow-x: hidden; /* Prevents horizontal scrolling */
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
 header{
-    background-image: url('bg.jpg');
+    background-image: url('assets/Main/bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,6 +16,13 @@ header{
     font-family:'Papyrus',cursive;
 
 }
+html, body {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 .navbar{
     display: flex;
     justify-content: center;
@@ -57,7 +58,7 @@ header{
     float: left;
 }
 body{
-    background-image: url("home bg.jpg");
+    background-image: url("assets/Main/bgMain.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -82,9 +83,7 @@ body{
     transition: background_color 1s ease;
 }
 
-
-  
-  .search-bar {
+.search-bar {
     width: 16%;
     position: relative;
     padding: 14px 10px;
@@ -118,3 +117,5 @@ body{
     border-radius: 30px;
     background: rgba(0, 0, 0, 0.4);
 }
+
+  
