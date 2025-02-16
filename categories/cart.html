@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel" rel="stylesheet">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="../CSS/cart.css">
+</head>
+<body>
+
+    <header class="cart-header">
+        <button onclick="goBack()" class="back-button">
+            <img src="../assets/cart/back-button.png" class="back-button-image">
+            <span class="back-text">Back to Shopping</span>
+        </button>
+        <h1>Your Shopping Cart</h1>
+    </header>
+
+    <main class="cart-container">
+        <div id="cart-items" class="cart-list"></div>
+        <div class="cart-footer">
+            <h3>Total: ₹<span id="total-price">0.00</span></h3>
+            <button onclick="clearCart()" class="clear-cart">Clear Cart</button>
+        </div>
+    </main>
+
+    <script src="../JS/cart.js"></script>
+</body>
+</html>
