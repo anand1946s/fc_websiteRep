@@ -6,7 +6,7 @@ h1{
     
 }
 header{
-    background-image: url('assets/Main/bg.jpg');
+    background-image: url('../assets/Main/bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@ html, body {
     float: left;
 }
 body{
-    background-image: url("assets/Main/bgMain.jpg");
+    background-image: url("../assets/Main/bgMain.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
