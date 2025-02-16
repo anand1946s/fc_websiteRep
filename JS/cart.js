@@ -20,7 +20,7 @@ function loadCart() {
             <img src="${item.img}" class="cart-item-image">
             <div class="cart-item-details">
                 <p class="cart-item-name">${item.name}</p>
-                <p class="cart-item-price">₹${item.price}</p>
+                <p class="cart-item-price">₹${item.price*item.quantity}</p>
                 <div class="quantity-container">
                     <button onclick="updateQuantity(${index}, -1)">-</button>
                     <span class="quantity">${item.quantity}</span>
