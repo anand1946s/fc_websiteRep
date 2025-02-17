@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: url('indoor bg.jpg') no-repeat center center fixed;
+    background: url('../assets/indoor/indoor bg.jpg') no-repeat center center fixed;
     background-size: cover;
     color: white;
     text-align: center;
@@ -54,7 +54,7 @@ h1 {
     transition: transform 0.4s ease-in-out;
 }
 .plant-card:hover, .highlight {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .plant-card img {
     width: 100%;
