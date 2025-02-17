@@ -1,0 +1,242 @@
+body {
+    background-color: rgb(240, 248, 234,0.7);
+    background-image:url("../assets/flowering/pattern.jpg");
+    background-repeat:repeat,no-repeat;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    transition: opacity 0.4s ease-in-out;
+    opacity: 1;
+    overflow-x: hidden;
+}
+
+.header {
+    font-family: "Cinzel";
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(232, 245, 233,0.8);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    gap: 25%; 
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2E3B32;
+    margin-bottom: 10px;
+    margin-left: 3%;
+}
+
+.cart-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.cart-icon {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transform: translate(140px,0);
+    transition: transform 0.4s ease-in-out;
+}
+.cart-container:hover .cart-icon{
+    transform: translate(-20px, 0) scale(1.1);
+}
+
+/* Stylish Text with Smooth Animation */
+.cart-text {
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.4s ease, transform 0.4s ease
+} 
+
+
+.home-text {
+    margin-left: 30px; /* Space from icon */
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease
+}
+
+.cart-container:hover .cart-text  {
+    opacity: 1;
+    transform: translateX(0);
+}
+.cart-container:hover .home-text  {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.home-icon {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.home-icon:hover {
+    transform: scale(1.1);
+}
+
+.search-bar {
+    margin: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    font-size: 16px;
+}
+
+#floweringPlantsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.card {
+    width: 250px;
+    margin: 15px;
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.15s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 240px;
+    border-radius: 8px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.card-price {
+    color: green;
+    font-size: 16px;
+}
+
+button {
+    background-color: #FFD700;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.15s;
+}
+
+button:hover {
+    background-color: #FFC107;
+}
+
+body {
+    background-color: #F4F1EA;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s ease-in-out;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    max-width: 500px;
+    text-align: center;
+}
+.modal-content img {
+    max-width: 100%;  /* Ensures the image fits within the modal */
+    max-height: 300px; /* Prevents extremely tall images */
+    border: width 3px;
+    border:2px solid black;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    background: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.close:hover {
+    background: red;
+    color: white;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#contactBar {
+    bottom: 0;
+    width: 100%;
+    background:rgb(245, 245, 220,0.6); 
+    color: rgb(0, 0, 0);
+    font-family: "Cinzel";
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.helpText{
+    opacity: 0.8;
+    font-size: 15px;
+}
