@@ -133,3 +133,6 @@ nav{
     border-radius: 20px;
     align-items: center;
 }
+.plus {
+    cursor: pointer; /* Default cursor */
+}
