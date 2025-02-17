@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Checkout</title>
+    <link rel="stylesheet" href="../CSS/checkout.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+</head>
+
+<header class="cart-header">
+    <button onclick="goBack()" class="back-button">
+        <img src="../assets/cart/back-button.png" class="back-button-image">
+        <span class="back-text">Back to Shopping</span>
+    </button>
+    <h1>Checkout</h1>
+</header>
+
+<body>
+    <div id="checkout-container"></div>
+    <h2>Total: ₹<span id="total-price">0.00</span></h2>
+    <button onclick="confirmOrder()">Confirm Order</button>
+
+    <script src="../JS/checkout.js"></script>
+</body>
+</html>
