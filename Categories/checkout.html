@@ -3,23 +3,39 @@
 <head>
     <title>Checkout</title>
     <link rel="stylesheet" href="../CSS/checkout.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
 </head>
-
-
-<header class="cart-header">
-    <button onclick="goBack()" class="back-button">
-        <img src="../assets/cart/back-button.png" class="back-button-image">
+<body>
+    <header class="cart-header">
+        <button onclick="goBack()" class="back-button">
+            <img src="../assets/cart/back-button.png" class="back-button-image">
             <span class="back-text">Back to Shopping</span>
         </button>
-    <h1>Checkout</h1>
-</header>
+        <h1>Check-Out</h1>
+    </header>
 
-<body>
-    <div id="checkout-container"></div>
-    <h2>Total: ₹<span id="total-price">0.00</span></h2>
-    <button onclick="confirmOrder()">Confirm Order</button>
+    <div id="checkout-container">
+        <h2>Delivery Address</h2>
+        <textarea id="address" placeholder="Enter your full address" required></textarea>
 
+        <h2>Select Payment Method</h2>
+        <div class="payment-options">
+            <label class="payment-option">
+                <input type="radio" name="payment" value="upi"> UPI Payment
+            </label>
+            <label class="payment-option">
+                <input type="radio" name="payment" value="cash"> Cash on Delivery
+            </label>
+        </div>
+
+        <h2>Order Summary</h2>
+        <div id="order-items"></div>
+        <h3>Total: ₹ <span id="total-price">0.00</span></h2>
+        
+        <button onclick="confirmOrder()" class="confirm-btn">Confirm Order</button>
+    </div>
+    
     <script src="../JS/checkout.js"></script>
 </body>
 </html>
