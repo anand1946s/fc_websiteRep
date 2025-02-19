@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>Flowering Plants</title>
+        <link rel="stylesheet" href="../CSS/flowerStyles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+
+    </head>
+    <body>
+        
+        <div class="header">
+
+            <div  class="cart-container" onclick="goHome()">
+                <img src="../assets/cart/home.png" alt="Home" class="home-icon" >
+                <span class="home-text">Home</span>
+            </div>
+
+            <h1>Flowering Plants</h1>
+
+            <div class="cart-container" onclick="goToCart()">
+                <img src="../assets/cart/cart.png" alt="Cart" class="cart-icon">
+                <span class="cart-text">Go to Cart</span>
+            </div>
+
+        </div>
+        
+        
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search.." autocomplete="off">
+            <button class="search-btn" id = "search-btn" onclick="focusNextPlant()">🔍</button>
+            <button class="clear-btn" onclick="clearSearch()">✖</button>
+        </div>
+        
+        
+        
+
+        <div id="floweringPlantsContainer"></div>
+
+    <div id="plantModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImg" src="" alt="Plant Image">
+            <h2 id="modalName"></h2>
+            <p id="modalDesc"></p>
+        </div>
+    </div>
+
+    <div class="contact-bar" id="contactBar">
+        <span class="helpText">Quantity can be changed in the cart menu</span><br>
+        <span class="helpText">Click on image to see brief description</span>
+        <p>Contact Us: +91 9496992173 | Email: Sreehari@plantnursery.com</p>
+    </div>
+
+
+    <script src="../JS/flowering.js"></script>
+
+    </body>
+</html>

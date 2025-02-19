@@ -1,0 +1,121 @@
+h1{
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+header{
+    background-image: url('../assets/Main/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    padding: 20px;
+    color: grey;
+    font-family:'Papyrus',cursive;
+
+}
+html, body {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    border-radius: 60px;
+    padding: 10px;
+    margin: 0px;
+    
+}
+.navbar ul{
+    background-color:#aeba5f;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    border-radius: 30px;
+}
+.navbar a{
+    color: #3A2718;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    transition: background-color 0.5s ease;
+}
+.navbar a:hover{
+    background-color:#472e12;
+    color: #FFEECC;
+    
+}
+.navbar li{
+    float: left;
+}
+body{
+    background-image: url("../assets/Main/bgMain.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+       justify-content: center;
+    align-items: center;
+
+}
+.centre-text{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transform: translate(-50%,-50%);
+}
+.centre-text:hover{
+    color: #aeba5f;
+    transition: background_color 1s ease;
+}
+
+.search-bar {
+    width: 16%;
+    position: relative;
+    padding: 14px 10px;
+    margin: 1% 42%;
+    font-size: 35px;
+    text-align: center;
+    font-family:"Jim Nightshade";
+    background: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    border-width: 0px 0px 4px 0px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    outline:none;
+    transition: 0.3s ease;
+}
+.search-bar::placeholder {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 40px; 
+    font-family: "Jim Nightshade";
+}
+
+.search-bar:hover {
+    width: 20%;
+    margin: 1% 40%;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.4);
+}
+.search-bar:focus {
+    width: 20%;
+    margin: 1% 40%;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+  
