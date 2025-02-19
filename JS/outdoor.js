@@ -1,6 +1,11 @@
 let plants = [
     { name: "Aloevera", price: 100, img: "../assets/Outdoor/aloevera.png", description: "Aloe" },
-    { name: "Marigold", price: 100, img: "../assets/Outdoor/marigold.png", description: "Aloe" },
+    { name: "Marigold", price: 50, img: "../assets/Outdoor/Marigold.png", description: "Marigold" },
+    { name: "Hibiscus", price: 120, img: "../assets/Outdoor/Hibiscus.png", description: "Hibiscus" },
+    { name: "Bougainvillea", price: 350, img: "../assets/Outdoor/Bougainvillea.png", description: "Bougainvillea" },
+    { name: "Sunflower", price: 150, img: "../assets/Outdoor/Sunflower.png", description: "Sunflower" },
+    { name: "Clover", price: 80, img: "../assets/Outdoor/Clover.png", description: "Clover" },
+
 ];
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
