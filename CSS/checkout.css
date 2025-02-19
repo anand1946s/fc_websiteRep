@@ -1,88 +1,35 @@
+/* checkout.css */
+
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #F5ECE3;
-    color: #3E3E3E;
+    font-family: "Montserrat";
+    background-color: #F7F9FC;
+    background-image: url("../assets/cart/cartBg.jpg");
+    text-align: center;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-h1 {
-    margin-top: 20px;
-    font-size: 28px;
-    color: #5A5A5A;
-}
-
-#checkout-container {
-    width: 60%;
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-
-.item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #E0E0E0;
-}
-
-.item:last-child {
-    border-bottom: none;
-}
-
-.item img {
-    width: 50px;
-    height: 50px;
-    border-radius: 8px;
-    object-fit: cover;
-}
-
-.item-name {
-    flex: 1;
-    margin-left: 10px;
-    font-weight: 600;
-}
-
-.item-price {
-    font-weight: 500;
-    color: #5A9367;
-}
-
-button {
-    background-color: #5A9367;
-    color: white;
-    padding: 12px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background 0.3s;
-}
-
-button:hover {
-    background-color: #4A7F56;
+    opacity: 1; 
+    transition: opacity 0.4s ease-in-out;
 }
 
 .cart-header {
     display: flex;
-    padding: 15px 20px;
-    background: rgb(0, 121, 107,0.7);
-    color: white;
+    align-items: center;
+    justify-content: center;
     font-family: "Cinzel";
+    letter-spacing: 8px;
+    padding: 15px 20px;
+    background: rgb(35, 160, 88);
+    color: white;
     font-size: 24px;
     font-weight: bold;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 
 .back-button {
+    position: absolute;
+    left: 60px;
     background: none;
     border: none;
     cursor: pointer;
@@ -112,4 +59,113 @@ button:hover {
 .back-button:hover .back-text  {
     opacity: 1;
     transform: translateX(0);
+}
+
+
+/* MAIN CHECKOUT CONTAINER */
+#checkout-container {
+    background: #ffffff;
+    padding: 20px;
+    margin-left: 30%;   
+    left:25%;
+    width: 120%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* SECTION HEADINGS */
+h2 {
+    background-color: rgb(52, 152, 219,0.5);
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    border-left: 5px solid #3498db; /* Blue bar on the left */
+    padding:8px;
+}
+h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    border-left: 5px solid #3498db; /* Blue bar on the left */
+    padding-left: 10px;
+    padding:20;
+}
+
+/* ADDRESS INPUT */
+textarea {
+    width: 100%;
+    height: 80px;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-top: 10px;
+    resize: none;
+    box-sizing: border-box;
+    background: #f8f9fa;
+}
+
+/* PAYMENT OPTIONS */
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #ecf0f1; /* Light grey */
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.payment-option:hover {
+    background: #d5dbdb;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* ORDER SUMMARY */
+#order-items {
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* TOTAL PRICE */
+#total-price {
+    font-weight: 700;
+    color: #27ae60; /* Green */
+}
+
+/* CONFIRM BUTTON */
+.confirm-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    background: #27ae60;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+.confirm-btn:hover {
+    background: #219150;
 }
