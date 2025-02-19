@@ -35,7 +35,7 @@ function displayPlants() {
         container.appendChild(card);
     });
 }
-
+displayPlants();
 
 function addToCart(index) {
     let existingItem = cart.find(item => item.name === plants[index].name);
@@ -63,17 +63,17 @@ function showDetails(index) {
     modalName.textContent = plants[index].name;
     modalDesc.textContent = plants[index].description;
 
-    modal.style.display = "flex";  // Change from block to flex for centering
+    modal.style.display = "flex";  
 }
 
 function closeModal() {
     let modal = document.getElementById("plantModal");
-    modal.classList.add("fade-out"); // Add fade-out class
+    modal.classList.add("fade-out"); 
 
     setTimeout(() => {
-        modal.style.display = "none"; // Hide after animation
-        modal.classList.remove("fade-out"); // Reset for next use
-    }, 300); // Match this duration to CSS transition
+        modal.style.display = "none"; 
+        modal.classList.remove("fade-out");
+    }, 300);
 }
 
 function goToCart() {
@@ -85,15 +85,13 @@ function goHome(){
     window.location.href = "../main.html";
 }
 
-displayPlants();
-
 document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
-        closeModal(); // Call your function to close the modal
+        closeModal(); 
     }
 });
 window.addEventListener("click", function (event) {
-    let modal = document.getElementById("plantModal"); // Replace with your modal's ID
+    let modal = document.getElementById("plantModal"); 
     if (event.target === modal) {
         closeModal();
     }
@@ -102,6 +100,23 @@ function clearSearch() {
     document.getElementById("searchInput").value = ""; 
     let allCards = document.querySelectorAll('.card');
     allCards.forEach(card => card.classList.remove('highlight'));
+    scrollToTop();
+}
+
+window.addEventListener("scroll", function () {
+    let button = document.getElementById("backToTop");
+    if (window.scrollY > 100) {
+        button.style.opacity = 1;
+        
+        button.style.visibility=visible;
+        button.style.cursor="pointer";
+    } else {
+        button.style.opacity = 0;
+        button.style.visibility=hidden;
+    }
+});
+
+function scrollToTop(){
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
@@ -142,3 +157,10 @@ function focusNextPlant() {
     plant.classList.add('highlight');
     plant.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
+
+
+
+
+
+
+
