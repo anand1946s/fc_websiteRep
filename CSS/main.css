@@ -117,5 +117,23 @@ body{
     border-radius: 30px;
     background: rgba(0, 0, 0, 0.4);
 }
+.reviews {
+    column-count: 3; /* Number of columns */
+    column-gap: 10px;
+}
+
+.reviews img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.reviews img:hover {
+    transform: scale(1.05);
+}
+
+
 
   
