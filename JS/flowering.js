@@ -122,20 +122,19 @@ document.getElementById('searchInput').addEventListener('keyup', (event)=> {
         );
         
         allCards.forEach(card => card.classList.remove('highlight'));
+        
     }
 });
 
 search = document.getElementById('search-btn');
-if (search){search.addEventListener('click', focusNextPlant())}
+if (search){search.addEventListener('click',focusNextPlant)}
 
 
 function focusNextPlant() {
-    if (searchResults.length === 0){
-        if (document.getElementById('searchInput').value=='')
-            alert("The plant that you searched for is not available\nContact customer service : sreehari@plantnursery.com");
+    if (searchResults.length === 0) {
+        alert("The plant that you searched for is not available\nContact customer service : sreehari@plantnursery.com");
         return;
     }
-
     currentIndex = (currentIndex + 1) % searchResults.length;
     document.querySelectorAll('.card').forEach(card => card.classList.remove('highlight'));
 
