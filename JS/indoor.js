@@ -1,16 +1,16 @@
 let plants = [
-    { name: "Moth Orchid", price: 10, img: "../assets/indoor/moth orchid.jpg"},
-    { name: "Rosemary", price: 10, img: "../assets/indoor/rosemary.jpg"},
-    { name: "Bromeliad", price: 10, img: "../assets/indoor/bromeliad.jpg"},
-    { name: "Oyestar Plant", price: 10, img: "../assets/indoor/oyestar plant.jpeg"},
-    { name: "Spider Plant", price: 10, img: "../assets/indoor/spider plant.jpg"},
-    { name: "Lucky Bamboo", price: 10, img: "../assets/indoor/lucky bamboo.jpg"},
-    { name: "Snake Plant", price: 10, img: "../assets/indoor/Snake Plant.jpg"},
-    { name: "", price: 10, img: "../assets/indoor/.jpg"},
-    { name: "", price: 10, img: "../assets/indoor/.jpg"},
-    { name: "", price: 10, img: "../assets/indoor/.jpg"},
-    { name: "", price: 10, img: "../assets/indoor/.jpg"},
-    { name: "", price: 10, img: "../assets/indoor/.jpg"},
+    { name: "Moth Orchid", price: 900, img: "../assets/indoor/moth orchid.jpg"},
+    { name: "Rosemary", price: 300, img: "../assets/indoor/rosemary.jpg"},
+    { name: "Bromeliad", price: 650, img: "../assets/indoor/bromeliad.jpg"},
+    { name: "Oyestar Plant", price: 400, img: "../assets/indoor/oyestar plant.jpeg"},
+    { name: "Spider Plant", price: 350, img: "../assets/indoor/spider plant.jpg"},
+    { name: "Lucky Bamboo", price: 400, img: "../assets/indoor/lucky bamboo.png"},
+    { name: "Snake Plant", price: 300, img: "../assets/indoor/Snake Plant.jpg"},
+    { name: "Peace Lilly", price: 600, img: "../assets/indoor/peace lily.jpg"},
+    { name: "ZZ Plant", price: 750, img: "../assets/indoor/ZZ plant.jpg"},
+    { name: "Golden Pothos", price: 600, img: "../assets/indoor/golden pothos.jpg"},
+    { name: "Jade Plant", price: 450, img: "../assets/indoor/jade plant.jpg"},
+    { name: "Aloe Vera", price: 350, img: "../assets/indoor/aloe vera.jpg"},
     
 ];
 
