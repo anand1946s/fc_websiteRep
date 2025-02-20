@@ -9,7 +9,7 @@
 <body style="background-color: #b8e693;">
     
     <header>
-        <h1>Kingdom Plantae or something else</h1>
+        <h1>Blooms.com</h1>
     </header>
 
     <div class="navbar">
@@ -17,31 +17,20 @@
         <button onclick="location.href='Categories/indoor.html'">Indoors</button>
         <button onclick="location.href='Categories/flowering.html'">Flower Plants</button>
         <button onclick="location.href='Categories/fruits.html'">Fruit Plants</button>
-        <button onclick="location.href='Categories/cart.html'">Cart</button>
+        <button onclick="location.href='Categories/cart.html'"><img class = "cartimg" src="assets/cart/cart3.png"></img> </button>
     </div>
+    <div class = "empty"></div>
+    <h2 class="reviews-heading" id ='h2'>Customer Reviews</h2>
+    
     <div class="reviews" id="reviews">
         <img src="assets/reviews/rev1.png" alt="Image 1">
         <img src="assets/reviews/rev2.png" alt="Image 2">
         <img src="assets/reviews/rev3.png" alt="Image 3">
         <img src="assets/reviews/rev4.png" alt="Image 4">
-        
     </div>
     <div class="fullscreen" id="fullscreen" style="display: none;">
         <img id="fullscreen-img" src="" alt="Full Image">
     </div>
-    
-    <script>
-        document.querySelectorAll('.reviews img').forEach(img => {
-            img.addEventListener('click', function() {
-                document.getElementById('fullscreen-img').src = this.src;
-                document.getElementById('fullscreen').style.display = 'flex';
-            });
-        });
-    
-        document.getElementById('fullscreen').addEventListener('click', function() {
-            this.style.display = 'none';
-        });
-    </script>
     
     <br>
     <script src="JS/main.js"></script>
